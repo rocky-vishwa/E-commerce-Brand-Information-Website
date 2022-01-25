@@ -1,0 +1,130 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box; 
+}
+:root{
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+header h1{
+	text-align: center;
+    font-size: 40px;
+    color: white;
+	
+}
+header{
+	padding: 40px;
+	background-color: rgb(17,124,143);
+
+}
+
+main{
+	background-color: white;
+	text-align: center;
+
+}
+h2{
+	padding: 40px;
+	font-size: 30px;
+    text-align: center;
+}
+main{
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.grid-item{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    
+    transition: 0.2s;
+
+}
+
+.grid-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+
+
+}
+.card-img {
+    display: block;
+    width: 45%;
+    height: 25%;
+    object-fit: cover;
+    margin-left: 28%;
+    margin-top: 20px;
+}
+.card-content {
+    padding: 15px;
+    
+
+}
+.card-header{
+    font-size: 30px;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+
+}
+.card-text{
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    color: #3d3d3d;
+    margin-bottom: 15px;
+
+}
+
+.card-btn{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.card-btn:hover,
+.card-btn:active{
+    background-color: #c2cffc;
+
+}
+
+@media screen and (max-width: 1000px){
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
